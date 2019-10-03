@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Photo Effect Slider with CSS Variables</title>
+        <link type='text/css' href='./styles.css' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Move The Sliders To Change The Effects!</h1>
+        <div class='sliders'>
+            <label for='blur'>Blur</label>
+            <input id='blur' class='slider' type='range' name='blur' min='0' max='50' value='0' data-suffix='px'>
+            <label for='contrast'>Contrast</label>
+            <input id='contrast' class='slider' type='range' name='contrast' min='0' max='200' value='100' data-suffix='%'>
+            <label for='brightness'>Brightness</label>
+            <input id='brightness' class='slider' type='range' name='brightness' min='0' max='200' value='100' data-suffix='%'>
+            <label for='saturation'>Saturation</label>
+            <input id='saturation' class='slider' type='range' name='saturation' min='0' max='200' value='1' data-sizing='%'>
+            <label for='greyscale'>Greyscale</label>
+            <input id='greyscale' class='slider' type='range' name='greyscale' min='0' max='200' value='0' data-suffix='%'>
+            <label for='sepia'>Sepia</label>
+            <input id='sepia' class='slider' type='range' name='sepia' min='0' max='200' value='0' data-suffix='%'>   
+            <label for='colour'>Colour</label>
+            <input id='colour' class='slider' type='color' name='colour' value='#264E36'>         
+        </div>
+        <div class='photo-container'>
+            <img src='./plants.jpg' alt='green plants with moisture droplets'>
+        </div>  
+        <script src='./script.js' type='text/javascript'></script>
+    </body>
+</html>

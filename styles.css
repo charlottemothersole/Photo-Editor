@@ -1,0 +1,73 @@
+body {
+    font-family:'Rubik', sans-serif;
+    margin:0;
+    
+}
+
+:root {
+    --blur:0px;
+    --contrast:100%;
+    --brightness:100%;
+    --saturation:100%;
+    --greyscale:0%;
+    --sepia:0%;
+    --colour:#264E36;
+}
+
+h1 {
+    display:flex;
+    color:#264E36;
+    margin:0;
+    height:10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.sliders {
+    width:100vw;
+    height:10vh;
+    display:flex;
+    flex-direction:row; 
+    justify-content: space-around;
+    color:#577284;
+    font-size:1.75rem;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width:100px;
+    height:25px;
+    background: #d3d3d3; /* Grey background */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    border-radius: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #4CAF50;
+    cursor: pointer;
+  }
+
+  label {
+      display:flex;
+      flex-direction:column;
+  }  
+
+.photo-container {
+    display:flex;
+    height:80vh;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--colour);
+}
+
+img {
+    height:70vh;
+    width:40vw;
+    filter:blur(var(--blur)) contrast(var(--contrast)) brightness(var(--brightness)) saturate(var(--saturation)) grayscale(var(--greyscale)) sepia(var(--sepia));
+}
+
